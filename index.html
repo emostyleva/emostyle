@@ -38,13 +38,13 @@
   </div>
   <div class="row" style="text-align:center">
     <div class="col-xs-0 col-md-3"></div>
-    <div class="col-xs-12 col-md-6">
+    <!-- <div class="col-xs-12 col-md-6">
       <h4>
         <a><nobr>Bita Azari*</nobr></a> &emsp;
         <a><nobr>Angelica Lim*</nobr></a> &emsp;
       </h4>
       *Simon Fraser University, <nobr>Burnaby</nobr>, <nobr>BC</nobr>, Canada
-    </div>
+    </div> -->
     <!-- <div class="hidden-xs hidden-sm col-md-1" style="text-align:left; margin-left:0px; margin-right:0px">
       <a href="https://arxiv.org/pdf/2006.11132.pdf" style="color:inherit">
         <i class="fa fa-file-pdf-o fa-4x"></i></a> 
@@ -59,8 +59,8 @@
 <div class="container" style="text-align:center; padding:1rem">
   <img src="resrc/samples.png" alt="samples.png" class="text-center" style="width: 100%; max-width: 1100px">
   <h3 style="text-align:center; padding-top:1rem">
-    <a class="label label-info" href="https://arxiv.org/abs/2006.11132">Paper</a>
-    <a class="label label-info" href="https://github.com/monniert/dti-clustering">Code<span style="font-size: smaller; font-weight: normal;"> (coming soon)</span></a>
+    <a class="label label-info" href="">Paper</a>
+    <a class="label label-info" href="">Code<span style="font-size: smaller; font-weight: normal;"> (coming soon)</span></a>
     <!-- <a class="label label-info" href="https://www.youtube.com/embed/j20MBc1hWGQ">Video</a>
     <a class="label label-info" href="resrc/dtic_long.pptx">Slides</a>
     <a class="label label-info" href="resrc/ref.bib">BibTeX</a> -->
@@ -162,7 +162,8 @@
       <p><strong>Phase 2 - Fine-tuning StyleGAN2:</strong> we freeze the <strong>EmoExtract</strong> module trained previously and fine-tune our StyleGAN2 component.
         Our inputs during this phase are emotion parameters and one out-of-domain face.
         First, we determine the face's latent code utilizing an inversion framework to extract the latent code in the StyleGAN2 <i>W</i> space,
-        then perform a fine-tuning step inspired from <cite>roich2022pivotal</cite>.
+        then perform a fine-tuning step.
+         <!-- step inspired from <cite>roich2022pivotal</cite>. -->
       </p>
   </div>
 
@@ -170,10 +171,10 @@
   <hr/>
   <div class="row" style="text-align: center; padding-left:1rem; padding-right:1rem; padding-bottom:1rem;">
     <h4><u>Results on StyleGAN images</u></h4>
-      <img src="resrc/samples.ong" alt="results.ng" class="text-center" style="width: 100%; max-width: 1000px;">
+      <img src="resrc/more.png" alt="results.ng" class="text-center" style="width: 100%; max-width: 1000px;">
   </div>
   <div style="text-align: center; padding-left: 1rem; padding-right: 1rem; padding-bottom: 1rem;">
-    <h4><u>Results on OOD images</u></h4>
+    <h4><u>Results on real images</u></h4>
     <div style="display: inline-block; width: calc(50% - 10px); box-sizing: border-box; padding-right: 10px;">
       <img src="resrc/barak_obama.gif" alt="barak_obama.gif" style="width: 100%;">
     </div>
@@ -183,7 +184,7 @@
   </div>
   
 
-  <h3>Resources</h3>
+  <!-- <h3>Resources</h3>
   <hr/>
     <h4 style="padding-top:0.5em">BibTeX</h4>
     If you find this work useful for your research, please cite:
@@ -197,7 +198,7 @@
       year = {2023}
     }
       </div>
-    </div>
+    </div> -->
 
   <!-- <h3>Further information</h3>
   <hr/>
